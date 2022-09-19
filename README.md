@@ -1,16 +1,34 @@
-# auto_subtitle
+![header](lib/assets/header_filled.png)
+## :sparkles: About
 
-A new Flutter project.
+このツールは、Flutterで作成されています。<br>
+動画を選択することで、自動で1920x1080に変換し、オーディオから発言を検出、焼き付けができます。
 
-## Getting Started
+## :speech_balloon: Platform Support
+このアプリケーションは、現時点で**macOS**のみサポートしています。<br>
+iOS、Andoridへの対応も予定しています。
 
-This project is a starting point for a Flutter application.
+## :arrow_down: Installation
+1. リポジトリをローカルにクローン
+```
+$ git clone https://github.com/auto-subtitle/desktop-app.git
+```
+2. lib/assets/
+2. リポジトリのフォルダへ移動し、必要なパッケージをインストール
+```
+$ cd desktop-app
+$ flutter pub get
+```
+3. podで使用するリポジトリをインストール
+```
+$ cd macos
+$ pod install
+```
+4. アプリケーションを実行
+```
+$ flutter run -d macOS --debug
+```
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## :warning: Warning
+エンコードの際使用する一部のコーデックには、ライセンスが適用される場合があります。<br>
+https://www.ffmpeg.org/legal.html
