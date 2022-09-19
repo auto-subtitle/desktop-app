@@ -15,7 +15,7 @@ $ git clone https://github.com/auto-subtitle/desktop-app.git
 ```
 2. Google Cloud [Speech-To-Text](https://cloud.google.com/speech-to-text?hl=ja)の認証キーを取得
 3. 認証キーのダウンロードを行い、credentials.jsonにリネーム
-4. リポジトリの`lib/assets/`フォルダへ移動
+4. リポジトリの`lib/assets/`フォルダへコピー
 ```
 $ cp ~/Downloads/credentials.json desktop-app/lib/assets/
 ```
